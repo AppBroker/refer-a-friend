@@ -75,5 +75,5 @@ Unit Tests - I've set up the library for testing but due to time constraints I'v
 
 Minification - CSS is bing built to a minified named.min.css file, but Ive not added the minification plugin to it yet. I'd get to that too.
 
-Unmounting - I'm using eventlisteners to bind and trigger event handlers, Ive not paid much attention to removing those listeners for now, which would be important in a bigger application.
+Unmounting - I'm using eventlisteners to bind and trigger event handlers, Ive not paid much attention to removing these listeners for now, in a bigger application this would be essential.
 
