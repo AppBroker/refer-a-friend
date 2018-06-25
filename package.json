@@ -1,0 +1,66 @@
+{
+  "name": "foolproof-task",
+  "version": "1.0.0",
+  "description": "Single component approach for a large-scale application",
+  "main": "lib/library.js",
+  "scripts": {
+    "build": "webpack --env devbuild && webpack --env build && npm run test",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register -r jsdom-global/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "add"
+  },
+  "keywords": [
+    "webpack",
+    "es6",
+    "referrals",
+    "library",
+    "invite",
+    "friend",
+    "universal",
+    "umd",
+    "commonjs"
+  ],
+  "author": "Ryan McLaughlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "add"
+  },
+  "homepage": "add",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.13.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-react": "^7.9.1",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fontfaceobserver": "^2.0.13",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "mocha": "^4.0.1",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.10.0",
+    "webpack-shell-plugin": "^0.5.0",
+    "yargs": "^10.0.3"
+  }
+}

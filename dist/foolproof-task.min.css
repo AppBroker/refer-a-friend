@@ -1,0 +1,87 @@
+.component {
+  width: 100%;
+  height: 100%;
+  padding: 28px; }
+  .component .form-inline label {
+    justify-content: left; }
+  .component__referral {
+    width: 100%; }
+    .component__referral input {
+      width: 100%;
+      background-color: #f6f6f6;
+      color: #4a4a4a; }
+      @media only screen and (min-width: 500px) {
+        .component__referral input {
+          width: 112px; } }
+    .component__referral--template {
+      padding-bottom: 7px;
+      padding-top: 14px;
+      margin-bottom: 14px; }
+    .component__referral--added {
+      border-bottom: 1px solid #fff; }
+    .component__referral--delete {
+      padding-top: 0px;
+      padding-right: 35px;
+      pointer-events: none; }
+    .component__referral--remove {
+      display: flex;
+      pointer-events: none; }
+    .component__referral--add {
+      pointer-events: none;
+      text-align: center; }
+    .component__referral .destroy {
+      color: #fff;
+      margin-top: 26px;
+      margin-left: -19px; }
+    .component__referral .generate {
+      color: #fff;
+      margin-top: 26px;
+      border: 1px #fff solid; }
+      @media only screen and (min-width: 500px) {
+        .component__referral .generate {
+          width: 112px; } }
+  .component--submit {
+    float: right; }
+    @media only screen and (min-width: 500px) {
+      .component--submit {
+        float: none;
+        left: calc(50% - 100);
+        position: absolute;
+        /* Firefox */
+        left: -moz-calc(50% - 100px);
+        /* WebKit */
+        left: -webkit-calc(50% - 100px);
+        /* Opera */
+        left: -o-calc(50% - 100px);
+        /* Standard */
+        left: calc(50% - 100px); } }
+  .component ol {
+    list-style-type: none;
+    padding-left: 14px;
+    padding-right: 14px; }
+  .component--red {
+    color: white;
+    background-color: #e9474b; }
+
+#application .form-inline .form-control {
+  width: inherit; }
+
+#application .btn-light {
+  color: #4a4a4a;
+  background-color: #fff;
+  border-color: #fff; }
+
+body {
+  font-family: roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  background-color: #e9474b; }
+
+h1 {
+  font-family: roboto, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500; }
+
+button {
+  width: 200px; }

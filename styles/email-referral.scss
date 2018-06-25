@@ -1,0 +1,96 @@
+.component {
+	width: 100%;
+	height: 100%;
+	padding: $gutterspacing * 4;
+
+	.form-inline label {
+		justify-content: left;
+	}
+
+	&__referral {
+		width: 100%;
+
+		input {
+			width: 100%;
+			background-color: $inputBG-Color;
+			color: $inputFont-Color;
+
+			@media only screen and (min-width: $mediaMinWidth) {
+				width: 112px;
+			}
+		}
+
+		&--template {
+			padding-bottom: $gutterspacing;
+			padding-top: $gutterspacing * 2;
+			margin-bottom: $gutterspacing * 2;
+		}
+
+		&--added {
+			border-bottom: 1px solid #fff;
+		}
+
+		&--delete {
+			padding-top: 0px;
+			padding-right: $gutterspacing * 5;
+			pointer-events: none;
+		}
+
+		&--remove {
+			display: flex;
+			pointer-events: none;
+		}
+
+		&--add {
+			pointer-events: none;
+			text-align: center;
+		}
+
+		.destroy {
+			color: #fff;
+			margin-top: 26px;
+			margin-left: -19px;
+		}
+
+		.generate {
+			color: #fff;
+			margin-top: 26px;
+			border: 1px #fff solid;
+
+			@media only screen and (min-width: $mediaMinWidth) {
+				width: 112px;
+			}
+		}
+	}
+
+	&--submit {
+		float: right;
+
+		@media only screen and (min-width: $mediaMinWidth) {
+			float: none;
+			left: calc(50% - 100);
+			position: absolute;
+
+			/* Firefox */
+			left: -moz-calc(50% - #{$buttonWidthHalf});
+			/* WebKit */
+			left: -webkit-calc(50% - #{$buttonWidthHalf});
+			/* Opera */
+			left: -o-calc(50% - #{$buttonWidthHalf});
+			/* Standard */
+			left: calc(50% - #{$buttonWidthHalf});
+		}
+	}
+
+	ol {
+		list-style-type: none;
+		padding-left: $gutterspacing * 2;
+		padding-right: $gutterspacing * 2;
+	}
+
+	&--red {
+  		color: white;
+  		background-color: $themeColor-Main;
+	}
+}
+

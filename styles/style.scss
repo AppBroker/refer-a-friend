@@ -1,0 +1,35 @@
+@import 'theme-items';
+@import 'email-referral';
+
+//Overrides
+#application {
+  .form-inline .form-control {
+    width: inherit;
+  }
+
+  .btn-light {
+    color: $inputFont-Color;
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
+
+body {
+  font-family: $theme-font;
+  font-size: $fontSize-General;
+  font-weight: $fontWeight-Bold;
+  margin: 0;
+  background-color: $themeColor-Main;
+}
+
+h1 {
+  font-family: $theme-font;
+  font-size: $fontSize-Large;
+  font-weight: $fontWeight-MedBold;
+}
+
+button {
+  width: $buttonWidth;
+}
+
+
