@@ -73,5 +73,7 @@ Data change validation - When a user adds a new row Im storing that data in loca
 
 Minification - CSS is bing built to a minified named.min.css file, but Ive not added the minification plugin to it yet. I'd get to that too.
 
+SVG - Fallback images for SVG also need to be added, at present SVG is purely inlined.
+
 Unmounting - I'm using eventlisteners to bind and trigger event handlers, Ive not paid much attention to removing these listeners for now, however in a bigger application this would be essential.
 
