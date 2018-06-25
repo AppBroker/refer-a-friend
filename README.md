@@ -58,9 +58,9 @@ Go to http://localhost:8080 to view the refer a friend application on Dev. Alter
 
 ## Scripts
 
-* `yarn build` or `npm run build` - produces production version of your library under the `dist` folder
-* `yarn dev` or `npm run dev` - produces development version of your src and styles
-* `yarn test` or `npm run test` - well ... runs the tests
+* `yarn build` or `npm run build` - runs the tests and produces production version of the library under the `dist` folder
+* `yarn dev` or `npm run dev` - produces development version of the javascript src and styles, after webpack is finished building the files an express server is started on http://localhost:8080
+* `yarn test` or `npm run test` - run the unit tests
 
 ## Thoughts and To Do Items
 Clean up - I built a project in the past which had the basic shell structure with most of what I needed, I did a fair bit of rigging with webpack to get ES6 up and running with webpack and babel, so this library is geared for async calls like await now as seen in the submission api. I actually spent more time rigging up the build than working on the features.
@@ -69,11 +69,9 @@ Validation - There is only very basic validation on the rows, I know this wasnt 
 
 Submit API - Ive created an example stub API method for the front end which can be easily swapped for a real submission api via, I would have set up an endpoint for this within express but wasnt sure if it would be required and ran out of time. 
 
-Data change validation - When a user adds a new row Im storing that data in localStorage, there are some additional dirty checking methods I should bind to the change handlers on the view so that the changes to a previous row would update the store. This would also tie in with validation, Ive made some comments within the code to identify where and how this should happen, but for the sake of brevity and time I've ommited the functionality for now.
-
-Unit Tests - I've set up the library for testing but due to time constraints I've not had time to look into why the tests are throwing, if I get some more time Id look into it.
+Data change validation - When a user adds a new row Im storing that data in localStorage, there are some additional dirty checking methods I would bind to the change handlers on the view so that the changes to a previous row would update the store. This would also tie in with validation, Ive made some comments within the code to identify where and how this should happen, but for the sake of brevity and time I've ommited the functionality for now.
 
 Minification - CSS is bing built to a minified named.min.css file, but Ive not added the minification plugin to it yet. I'd get to that too.
 
-Unmounting - I'm using eventlisteners to bind and trigger event handlers, Ive not paid much attention to removing these listeners for now, in a bigger application this would be essential.
+Unmounting - I'm using eventlisteners to bind and trigger event handlers, Ive not paid much attention to removing these listeners for now, however in a bigger application this would be essential.
 
